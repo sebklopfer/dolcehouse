@@ -17,14 +17,14 @@ body {
 
 nav>ul>li>a {
 	font-family:titles;
-	font-size:90%;
+	font-size:0.9em;
 	text-decoration:none;
 	color: #3268E7;
 }
 
 nav>ul>li>ul>li>a {
 	font-family:titles;
-	font-size:80%;	
+	font-size:0.75em;	
 	text-decoration:none;
 	color: #3268E7;
 		
@@ -41,6 +41,7 @@ ul {
 	list-style:none;
 	padding-left: 0;
 	text-align:center;
+
 }
 
 nav ul:not(nav>ul>li>ul>li>a) {
@@ -51,18 +52,61 @@ nav ul:not(nav>ul>li>ul>li>a) {
 nav ul ul li {
 	display: none;
 	border:none;
-	line-height:200%;
-	width: 100%;
+	line-height:50px;
+
 	
 }
 
 nav ul li:hover > ul li{
 	display:block;
 	list-style:none;
+	background-color:rgba(0,0,0,0.8);
+	
 }
 
-nav ul li:hover > a {
+nav ul li:hover > ul {
+	position: absolute;
+	width: 100%;
+
+
+}
+
+nav>ul>li:hover > a{
 	color: black;
+
+}
+nav ul ul li:hover > a {
+	color: white;
+
+}
+
+#order_container {
+	background-color: rgba(0,0,0,0.1);
+	width: 100vw;
+	height: 100%;
+	text-align: center;
+	font-family: titles;
+	vertical-align: middle;
+	top: 0%;
+	padding-top: 0.4%;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+#order_container>p {
+	color: #3268e7;
+	font-size: 2em;
+		
+}
+
+#step_one {
+	background-color:rgba(0,0,0,0.3);
+}
+
+td {
+	font-size:0.7em;
+	width:100%;
+	margin:0 auto; 
 }
 
 nav img {

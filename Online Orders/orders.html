@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div id = "modifiable">
+  </div> 
+   
+</table>
+
+
+<script>
+function myFunction(ord) {
+    out = "<tr><th>No.</th><th>Time</th><th>Name</th><th>Phone Number</th><th>Order</th><th>Comments</th></tr>"
+	for (var i = 0; i<ord.length; i++) {
+		out += '<tr><td>'+ord[i].number+'</td><td>'+ord[i].time+'</td><td>'+ord[i].name+'</td><td>'+ord[i].phone+'</td><td>'+ord[i].order+'</td><td>'+ord[i].comment+'</td></tr>';
+	}
+    document.getElementById("modifiable").innerHTML = "<table width='100%' border='1'>"+out+"</table>";
+}
+</script>
+
+<script src="order_sheet.js"></script>
+
+</body>
+</html>
