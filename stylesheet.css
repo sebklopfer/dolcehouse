@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    /*background-image: url("Dolce_Pattern.svg");
+	background-color:transparent;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 120% auto;
+	background-attachment:scroll;*/
+}
+
+@font-face {
+	font-family:titles;
+	src: url("centgoth.ttf")
+}
+
+
+nav>ul>li>a {
+	font-family:titles;
+	font-size:90%;
+	text-decoration:none;
+	color: #3268E7;
+}
+
+nav>ul>li>ul>li>a {
+	font-family:titles;
+	font-size:80%;	
+	text-decoration:none;
+	color: #3268E7;
+		
+}
+
+nav ul li{
+	display:inline-table;
+	width: 19%;
+	list-style-type:none;
+	text-align:center;
+}
+
+ul {
+	list-style:none;
+	padding-left: 0;
+	text-align:center;
+}
+
+nav ul:not(nav>ul>li>ul>li>a) {
+	padding: 0;
+	list-style:none;
+}
+
+nav ul ul li {
+	display: none;
+	border:none;
+	line-height:200%;
+	width: 100%;
+	
+}
+
+nav ul li:hover > ul li{
+	display:block;
+	list-style:none;
+}
+
+nav ul li:hover > a {
+	color: black;
+}
+
+nav img {
+	width: 50%;
+	height: auto;
+}
