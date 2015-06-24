@@ -90,9 +90,6 @@ nav ul ul li:hover > a {
 	vertical-align: middle;
 	top: 0%;
 	margin: 0 auto;
-	padding-top: 0.4%;
-	padding-right: 2%;
-	padding-left: 2%;
 }
 
 #order_container>p {
@@ -101,8 +98,10 @@ nav ul ul li:hover > a {
 		
 }
 
-#step_one {
+#step_one, #step_two {
 	background-color:rgba(0,0,0,0.3);
+	padding: 2%;
+	border-radius:5px;
 }
 
 td {
