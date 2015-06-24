@@ -17,7 +17,7 @@ body {
 
 nav>ul>li>a {
 	font-family:titles;
-	font-size:0.9em;
+	font-size:0.7em;
 	text-decoration:none;
 	color: #3268E7;
 }
@@ -33,7 +33,7 @@ nav>ul>li>ul>li>a {
 
 nav ul li{
 	display:inline-table;
-	width: 15%;
+	width: 19%;
 	list-style-type:none;
 	text-align:center;
 }
@@ -113,7 +113,7 @@ td {
 }
 
 nav img {
-	width: 50%;
+	width: 7em;
 	height: auto;
 }
 
