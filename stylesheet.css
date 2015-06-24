@@ -88,6 +88,7 @@ nav ul ul li:hover > a {
 	font-family: titles;
 	vertical-align: middle;
 	top: 0%;
+	margin: 0 auto;
 	padding-top: 0.4%;
 	padding-right: 2%;
 	padding-left: 2%;
