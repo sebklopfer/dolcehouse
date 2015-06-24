@@ -30,12 +30,10 @@ nav>ul>li>ul>li>a {
 		
 }
 
-nav {
-	width: 100%;
-}
 
 nav ul li{
 	display:inline-table;
+	width: 19%;
 	list-style-type:none;
 	text-align:center;
 }
