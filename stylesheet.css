@@ -83,11 +83,17 @@ nav ul ul li:hover > a {
 
 }
 
+
+
 .multiple-items img{
-	width: 100%;
+	width: 98%;
 	height: auto;
-	z-index:-1;
-	
+	z-index:-1;	
+}
+
+.multiple-items {
+	margin: 0 auto;
+	width: 95%;
 }
 
 
@@ -122,11 +128,6 @@ td {
 	margin:0 auto; 
 }
 
-nav img {
-	max-width:100%;
-	width: 60%;
-	height: auto;
-}
 
 h3.product_selection {
 	color: #3268e7;	
