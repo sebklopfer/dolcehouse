@@ -15,7 +15,21 @@
 </head>
 
 <body>
-	<center><a href="index.html"><img style="width:20%; height:auto;" src="Photos/Dolce_House.svg"></a></center>
+	
+		<script type="text/javascript">
+			window.onload = function() {
+				var img = document.getElementById( 'logo' );
+				if (window.innerWidth<window.innerHeight) {
+					img.style.width="60%";
+					img.style.height="auto";
+				} else {
+					img.style.width="20%";
+					img.style.height="auto";
+				}
+			}
+		</script>
+		<center><a href="index.html"><img id="logo" src="Photos/Dolce_House.svg"></a></center>
+	
         <nav> 
         	<ul>
         	
@@ -73,6 +87,7 @@
 	   	  }
 	
     </script>
+
    
 </body>
 </html>
