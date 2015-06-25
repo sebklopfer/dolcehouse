@@ -14,17 +14,16 @@ body {
 	src: url("centgoth.ttf")
 }
 
-
 nav>ul>li>a {
 	font-family:titles;
-	font-size:0.7em;
+	font-size:0.8em;
 	text-decoration:none;
 	color: #3268E7;
 }
 
 nav>ul>li>ul>li>a {
 	font-family:titles;
-	font-size:0.75em;	
+	font-size:0.8em;	
 	text-decoration:none;
 	color: #3268E7;
 		
@@ -62,24 +61,35 @@ nav ul li:hover > ul li{
 	display:block;
 	list-style:none;
 	background-color:rgba(0,0,0,0.8);
+	z-index: 2;
 	
 }
 
 nav ul li:hover > ul {
 	position: absolute;
 	width: 100%;
-
+	z-index: 2;
+	
 
 }
 
 nav>ul>li:hover > a{
 	color: black;
+	
 
 }
 nav ul ul li:hover > a {
 	color: white;
 
 }
+
+.multiple-items img{
+	width: 100%;
+	height: auto;
+	z-index:-1;
+	
+}
+
 
 #order_container {
 	background-color: rgba(0,0,0,0.1);
