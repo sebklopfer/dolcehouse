@@ -1,4 +1,4 @@
-@charset "utf-8";
+	@charset "utf-8";
 /* CSS Document */
 body {
     /*background-image: url("Dolce_Pattern.svg");
@@ -25,8 +25,7 @@ nav>ul>li>ul>li>a {
 	font-family:titles;
 	font-size:0.8em;	
 	text-decoration:none;
-	color: #3268E7;
-		
+	color: #3268E7;		
 }
 
 
@@ -41,7 +40,6 @@ ul {
 	list-style:none;
 	padding-left: 0;
 	text-align:center;
-
 }
 
 nav ul:not(nav>ul>li>ul>li>a) {
@@ -52,38 +50,30 @@ nav ul:not(nav>ul>li>ul>li>a) {
 nav ul ul li {
 	display: none;
 	border:none;
-	line-height:50px;
-
-	
+	line-height:50px;	
 }
 
 nav ul li:hover > ul li{
 	display:block;
 	list-style:none;
 	background-color:rgba(0,0,0,0.8);
-	z-index: 2;
-	
+	z-index: 2;	
 }
 
 nav ul li:hover > ul {
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-	
-
 }
 
 nav>ul>li:hover > a{
 	color: black;
-	
-
 }
+
 nav ul ul li:hover > a {
 	color: white;
 
 }
-
-
 
 .multiple-items img{
 	width: 98%;
@@ -109,17 +99,24 @@ nav ul ul li:hover > a {
 	padding: 2%;
 }
 
+
 #order_container>p {
 	color: #3268e7;
-	font-size: 2em;
-		
+	font-size: 2em;		
 }
 
-#step_one, #step_two {
+#step_one, #step_two, #order_list {
 	background-color:rgba(0,0,0,0.3);
 	padding: 2%;
-	border-radius:5px;
+	border-radius:10px;
 	margin:2%;
+}
+
+#step_two td, #details-form{
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 10px;
+	border: 1px solid #3268E7;
+	padding: 3%;
 }
 
 td {
@@ -130,12 +127,20 @@ td {
 
 
 h3.product_selection {
-	color: #3268e7;	
+	color: #3268E7;	
 }
 
 img.product_selection {
 	width:80%;
-	height:60%;
-	
+	height:60%;	
 }
 
+button {
+	border-radius: 10px;
+	background-color:#3268E7;
+	color: white;
+}
+
+#order-table {
+	width: 100%;
+}

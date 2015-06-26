@@ -2,121 +2,129 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Dolce House</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
 </head>
 
 <body>
-	<script type="text/javascript">
-			window.onload = function() {
-				var img = document.getElementById( 'logo' );
-				if (window.innerWidth<window.innerHeight) {
-					img.style.width="60%";
-					img.style.height="auto";
-				} else {
-					img.style.width="20%";
-					img.style.height="auto";
-				}
-			}
-		</script>
-		<center><a href="index.html"><img id="logo" src="Photos/Dolce_House.svg"></a></center>	
-        <nav> 
-        	<ul>
-        		
-            	<li><a href="/css/">ABOUT</a></li> 
-            	<li><a href="#">DESSERTS</a>
-            		<ul>
-            			<li><a href="#">Cakes</a></li>
-            			<li><a href="#">Gelato</a></li>
-            			<li><a href="#">Drinks</a></li>
-            		</ul>
-            	</li>
-            	<li><a href="order.html">ORDER</a></li> 
-            	<li><a href="#">CONTACT US</a></li>
-        	</ul>
-        </nav>
-        
-        <div id = "order_container">
-        	<p>MAKE AN ORDER</p>
-            <div id="step_one">
-            	<h4 style = "text-align: center;"><strong>Step 1</strong></h4>
-                <p style="font-size: 0.7em;">Please fill in the details below.</p>
-                <table width="100%" style="table-layout:fixed">
-                <tr>
-                <form>
-                <td style="text-align: right;">First name:</td>
-                <td style="text-align: left;"><input style="width:50%;" type="text" name="firstname" required></td>
-                </tr>
-              
-                <tr>
-                <td style="text-align: right;">Last name:</td>
-                <td style="text-align: left;"><input style="width:50%;" type="text" name="lastname" required></td>
-              
-                </tr>
-                <tr>
-                <td style="text-align: right;">Mobile Number:</td>
-                <td style="text-align: left;"><input style="width:50%;" type="number" name="number" required></td>
-                </tr>
-                
-                </table>
-          </div>
-          <div id = "step_two">
-          	<h4 style="text-align:center;"><strong>Step 2</strong></h4>
-          	<p style="font-size: 0.7em;">Select your order!</p>
-          	<table width="100%" style="table-layout:fixed" border='1'>
-                <tr>
-	                <td><div class='product_selection'>
-	                	<h3>Original Waffle</h3>
-	                	<img src="#">
-	                	<p>Waffle with Strawberries, Banana, Lizzy's Chocolate and Vanilla Icecream.</p>
-	                	<button type='button'>Add to Order</button>
-	                </div></td>
-	                <td><div class='product_selection'>
-	                	<h3>Nutella Waffle</h3>
-	                	<img src="#">
-	                	<p>Waffle with Strawberries, Ferrero Nutella and Hazelnut Icecream.</p>
-	                	<button type='button'>Add to Order</button>
-	                </div></td>
-                </tr>
-                <tr>
-	                <td><div class='product_selection'>
-	                	<h3>Choc Raspberry Waffle</h3>
-	                	<img src="#">
-	                	<p>Waffle with Coconut Cream, Raspberry Coulis and Chocolate Icecream.</p>
-	                	<button type='button'>Add to Order</button>
-	                </div></td>
-	                <td><div class='product_selection'>
-	                	<h3>Salted Caramel Waffle</h3>
-	                	<img src="#">
-	                	<p>Waffle with Chocolate Mousse, Salted Caramel and Hokey Pokey Butterscotch Icecream.</p>
-	                	<input id = "quantity-input"type="number" name="quantity"  min="1" max="20"/>
-	                	<button style = "float:left;" type='button'>Add to Cart</button>
-	                </div></td>
-                </tr>
-                <tr>
-	                <td><div class='product_selection'>
-	                	<h3>Rose Delight Waffle</h3>
-	                	<img src="#">
-	                	<p>Something that obviously tastes good.</p>
-	                	<button type='button'>Add to Cart</button>
-	                	
-	                </div></td>
-	                <td><div class='product_selection'>
-	                	<h3>Lemon Tart</h3>
-	                	<img src="#">
-	                	<p>You cant go wrong.</p>
-	                	<button type='button'>Add to Cart</button>
-	                	
-	                </div></td>
-                </tr>
-                </form> 
-                </table>
-                <input type="submit">
-          	</form> 
-          </div>
-          
-        </div>
-    <!--<img id = "cover" src="cover.jpg" width="720" height="405"  alt=""/>-->
+	<center><a href="index.html"><img id="logo"></a></center>
+	<nav> 
+		<ul>
+
+			<li><a href="/css/">ABOUT</a></li> 
+			<li><a href="#">DESSERTS</a>
+				<ul>
+					<li><a href="#">Cakes</a></li>
+					<li><a href="#">Gelato</a></li>
+					<li><a href="#">Drinks</a></li>
+				</ul>
+			</li>
+			<li><a href="order.html">ORDER</a></li> 
+			<li><a href="#">CONTACT US</a></li>
+		</ul>
+	</nav>
+	<form>
+		<div id = "order_container">
+
+			<p>MAKE AN ORDER</p>
+
+			<div id="step_one">
+				<h4 style = "text-align: center;"><strong>Step 1 - Details</strong></h4>
+				<div id="details-form">
+					<p style="font-size: 0.7em;">Please fill in the details below.</p>
+					<table width="100%" style="table-layout:fixed">
+						<tr>
+
+							<td style="text-align: right;">* First name:</td>
+							<td style="text-align: left;"><input style="width:50%;" type="text" name="firstname" required></td>
+						</tr>
+
+						<tr>
+							<td style="text-align: right;">* Last name:</td>
+							<td style="text-align: left;"><input style="width:50%;" type="text" name="lastname" required></td>
+
+						</tr>
+						<tr>
+							<td style="text-align: right;">* Mobile Number:</td>
+							<td style="text-align: left;"><input style="width:50%;" type="number" name="number" required></td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+
+			<div id = "step_two">
+				<h4 style="text-align:center;"><strong>Step 2 - Selection</strong></h4>
+				<p style="font-size: 0.7em;">Select your order!</p>
+				<table width="100%" style="table-layout:fixed">
+					<tr>
+						<td><div class='product_selection'>
+							<h3 class="product-title">Original Waffle</h3>
+							<img src="#">
+							<p>Waffle with Strawberries, Banana, Lizzy's Chocolate and Vanilla Icecream.</p>
+							Quantity: <input class="quantity-input" type="number" name="quantity"  min="1" max="20">
+							<button onclick="updateList(this.id)" id="add_order_btn_1" type='button'>Add to Order</button>
+						</div></td>
+						<td><div class='product_selection'>
+							<h3 class="product-title">Nutella Waffle</h3>
+							<img src="#">
+							<p>Waffle with Strawberries, Ferrero Nutella and Hazelnut Icecream.</p>
+							Quantity: <input class="quantity-input" type="number" name="quantity"  min="1" max="20">
+							<button onclick="updateList(this.id)" id="add_order_btn_2" type='button'>Add to Order</button>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class='product_selection'>
+							<h3 class="product-title">Choc Raspberry Waffle</h3>
+							<img src="#">
+							<p>Waffle with Coconut Cream, Raspberry Coulis and Chocolate Icecream.</p>
+							Quantity: <input class="quantity-input" type="number" name="quantity"  min="1" max="20">
+							<button onclick="updateList(this.id)" id="add_order_btn_3" type='button'>Add to Order</button>
+						</div></td>
+						<td><div class='product_selection'>
+							<h3 class="product-title">Salted Caramel Waffle</h3>
+							<img src="#">
+							<p>Waffle with Chocolate Mousse, Salted Caramel and Hokey Pokey Butterscotch Icecream.</p>
+							Quantity: <input class="quantity-input" type="number" name="quantity"  min="1" max="20">
+							<button onclick="updateList(this.id)" id="add_order_btn_4" type='button'>Add to Order</button>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class='product_selection'>
+							<h3 class="product-title">Rose Delight Waffle</h3>
+							<img src="#">
+							<p>Something that obviously tastes good.</p>
+							Quantity: <input class="quantity-input" type="number" name="quantity"  min="1" max="20">
+							<button onclick="updateList(this.id)" id="add_order_btn_5" type='button'>Add to Order</button>
+
+						</div></td>
+						<td><div class='product_selection'>
+							<h3 class="product-title">Lemon Tart</h3>
+							<img src="#">
+							<p>You cant go wrong.</p>
+							Quantity: <input class="quantity-input" type="number" name="quantity"  min="1" max="20">
+							<button onclick="updateList(this.id)" id="add_order_btn_6" type='button'>Add to Order</button>
+
+						</div></td>
+					</tr>
+				</table>		
+			</div>
+
+			<div id="order_list">
+				<h4 style='text-align:center;'><strong>Step 3 - Confirmation</strong></h4><br>
+
+				<div id="order-table"><p>* Order will appear here *</p></div>
+				<script type="text/javascript" src="order_list.js"></script>
+			</div> 
+			<br>
+			<button>Submit Order!</button>
+		</div>
+	</form>
+	<!--<img id = "cover" src="cover.jpg" width="720" height="405"  alt=""/>-->
+	
+
 </body>
 </html>
