@@ -34,11 +34,14 @@ var out = "<table width='100%' style='table-layout:fixed;background-color: rgba(
 var product = document.getElementsByClassName("product-title");
 
 function updateList(clickedID) {
-
-	out += ('<tr><td>'+productNum+'</td><td>'+product[(buttonIndex[clickedID])].innerHTML+'</td><td>'+productQuant[(buttonIndex[clickedID])].value+'</td><td>price</td></tr>');
-	console.log(out);
+	if (productQuant[(buttonIndex[clickedID])].value <= 10) {
+		out += ('<tr><td>'+productNum+'</td><td>'+product[(buttonIndex[clickedID])].innerHTML+'</td><td>'+productQuant[(buttonIndex[clickedID])].value+'</td><td>price</td></tr>');
+	}
+	else { alert("Please select a quantity from 1 to 5.") }
+	
 	document.getElementById("order-table").innerHTML = out+"</table>";
-	productNum++;
-	productQuant[(buttonIndex[clickedID])].value = "1";
+	productNum++; 
+	
+	productQuant[(buttonIndex[clickedID])].value = 1;
 
 }

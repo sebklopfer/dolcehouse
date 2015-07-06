@@ -144,3 +144,7 @@ button {
 #order-table {
 	width: 100%;
 }
+
+.quantity-input {
+	width:5%;
+}
