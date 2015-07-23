@@ -4,4 +4,4 @@ var orders = [
 
 
 
-myFunction(orders)
+displayOrders(orders);

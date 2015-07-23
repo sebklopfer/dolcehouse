@@ -14,6 +14,10 @@ body {
 	src: url("centgoth.ttf")
 }
 
+nav {
+	width: 100%;
+}
+
 nav>ul>li>a {
 	font-family:titles;
 	font-size:0.8em;
@@ -147,4 +151,11 @@ button {
 
 .quantity-input {
 	width:5%;
+}
+
+.contact-us-layout {
+	vertical-align: top;
+	margin-left: 7%;
+	display: inline-block;
+	font-family: titles;
 }
