@@ -153,7 +153,7 @@ button {
 	width:5%;
 }
 
-#contact-us-container {
+#page-container {
 	background-color: rgba(0,0,0,0.1);
 	margin: 0 auto;
 	width: 90%;
@@ -166,4 +166,26 @@ button {
 	display: inline-block;
 	font-family: titles;
 	margin-left: 2%;
+}
+
+#sub-container {
+	padding: 2% 2% 0% 2%;
+}
+
+#product-categories {
+	table-layout: fixed;
+	width: 100%;
+}
+
+#product-categories img {
+	width: 100%;
+	height: auto;
+}
+
+#product-categories img:hover {
+	opacity: 1 !important;
+}
+
+#product-categories h1 {
+	text-align: center;
 }
