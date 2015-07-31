@@ -153,9 +153,17 @@ button {
 	width:5%;
 }
 
-.contact-us-layout {
+#contact-us-container {
+	background-color: rgba(0,0,0,0.1);
+	margin: 0 auto;
+	width: 90%;
+	height: 100%;
+	font-family: titles;
+}
+
+.contact-us-categories {
 	vertical-align: top;
-	margin-left: 7%;
 	display: inline-block;
 	font-family: titles;
+	margin-left: 2%;
 }
