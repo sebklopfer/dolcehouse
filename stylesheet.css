@@ -186,10 +186,6 @@ button {
 	opacity: 1 !important;
 }
 
-#product-categories h1 {
-	text-align: center;
-}
-
-.product_view {
+#product-categories h2 {
 	text-align: center;
 }
