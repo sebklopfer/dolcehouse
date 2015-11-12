@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Dolce House</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+	<script type="text/javascript">
+			window.onresize = function() {
+				location.reload();
+			}
+			window.onload = function() {
+				var img = document.getElementById( 'logo' );
+				
+				img.src = "Photos/Dolce_House.svg";
+				if (window.innerWidth<window.innerHeight) {
+					img.style.width="60%";
+					img.style.height="auto";
+					$('.product_view').css('opacity', '1');
+					
+				} else {
+					img.style.width="20%";
+					img.style.height="auto";
+					$('.product_view').css('opacity', '0.6');
+				}
+			}
+		</script>
+		<center><a href="index.html"><img id="logo"></a></center>
+	
+        <nav> 
+        	<ul>
+        	
+            	<li><a href="about.html">ABOUT</a></li> 
+            	<li><a href="desserts.html">DESSERTS</a>
+<!--             		<ul>
+            			<li><a href="#">Cakes</a></li>
+            			<li><a href="#">Gelato</a></li>
+            			<li><a href="#">Drinks</a></li>
+            		</ul> -->
+            	</li>
+            	<li><a href="order.html">ORDER</a></li> 
+            	<li><a href="contact_us.html">CONTACT US</a></li>
+        	</ul>
+        </nav>
+
+        <div id="page-container">
+        	<div id="sub-container"></div>
+        </div>
+</body>
+</html>

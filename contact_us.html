@@ -1,7 +1,7 @@
 	<!doctype html>
 <html>
 <head>
-	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<title>Dolce House</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -11,9 +11,13 @@
 <body>
 		<script type="text/javascript">
 			window.onresize = function(event) {
-		  		location.reload();
+		  		resizePage();
 		  	}
 			window.onload = function() {
+				resizePage();							
+			}
+
+			function resizePage() {
 				var categories = document.getElementsByClassName("contact-us-categories");
 				var img = document.getElementById( 'logo' );
 				var map = document.getElementById('dolce-map');
@@ -31,7 +35,7 @@
 					img.style.height="auto";
 					map.style.width="45vw";
 					map.style.height="70vh";	
-					categories[1].style.width = "40%";				
+					categories[1].style.width = "40%";	
 				}
 			}
 		</script>

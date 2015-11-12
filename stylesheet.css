@@ -159,6 +159,7 @@ button {
 	width: 90%;
 	height: 100%;
 	font-family: titles;
+	padding-top: 1%;
 }
 
 .contact-us-categories {
@@ -188,4 +189,10 @@ button {
 
 #product-categories h2 {
 	text-align: center;
+}
+
+.container-section {
+	display: inline-block;
+	margin-left: 2%;
+	vertical-align: top;
 }

@@ -1,7 +1,7 @@
 	<!doctype html>
 <html>
 <head>
-	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<title>Dolce House</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -15,7 +15,7 @@
 
 <body>
 		<script type="text/javascript">
-			window.onload = function() {
+			function logoResize() {
 				var img = document.getElementById( 'logo' );
 				img.src = "Photos/Dolce_House.svg";
 				if (window.innerWidth<window.innerHeight) {
@@ -25,6 +25,12 @@
 					img.style.width="20%";
 					img.style.height="auto";
 				}
+			}
+			window.onload = function() {
+				logoResize();
+			}
+			window.onresize = function() {
+				logoResize();
 			}
 		</script>
 		<center><a href="index.html"><img id="logo"></a></center>
@@ -45,21 +51,29 @@
         	</ul>
         </nav>
     <!--<img id = "cover" src="cover.jpg" width="720" height="405"  alt=""/>-->
-     <div class="multiple-items">
-	    <div><img src="Photos/test1.jpg"></div>
-	    <div><img src="Photos/test1.jpg"></div>
-	    <div><img src="Photos/test1.jpg"></div>
-	    <div><img src="Photos/test1.jpg"></div>
-	    <div><img src="Photos/test1.jpg"></div>
-	 </div>
+    <div id="page-container">
+    	<div class="container-section">
+    		<h3 style="margin-left:3%;">
+    			ABOUT US
+    		</h3>
+    	</div>
+    	<div style="margin-left:5%;" class="container-section">
+    		<div class="multiple-items">
+	   			<div><img src="Photos/test1.jpg"></div>
+	    		<div><img src="Photos/test1.jpg"></div>
+	    		<div><img src="Photos/test1.jpg"></div>
+	    		<div><img src="Photos/test1.jpg"></div>
+	    		<div><img src="Photos/test1.jpg"></div>
+	 		</div>
+	 	</div>
+	</div>
 	
 	
 	  <script type="text/javascript">
-		  window.onresize = function(event) {
-		  	location.reload();
-		  }
-		  if (window.innerWidth<window.innerHeight) {
-		  	$(document).ready(function(){
+
+	  	var sections = document.getElementsByClassName("container-section");
+		$(document).ready(function(){
+				adjustSizing();
 	            $('.multiple-items').slick({
 	                slidesToShow: 1,
 					slidesToScroll: 1,
@@ -70,20 +84,34 @@
 					
 	            });
 	        });
-		  } else {
-	        $(document).ready(function(){
-	            $('.multiple-items').slick({
-	                slidesToShow: 3,
+		window.onresize = function() {
+			adjustSizing();
+		}
+
+
+		function adjustSizing() {
+			
+			if (window.innerWidth<window.innerHeight) {
+			
+				sections[0].style.width = "90%";
+				sections[1].style.width = "90%";
+				$(document).ready(function(){
+		        	$('.multiple-items').slick({
+		            slidesToShow: 1,
 					slidesToScroll: 1,
 					infinite: true,
 					autoplay: true,
 					autoplaySpeed: 2000,
 					dots: true,	
-					
-	            });
-	        });
-	   	  }
-	
+						
+		            });
+		        });
+			} else {        
+		        sections[0].style.width="60%";
+				sections[1].style.width="30%";
+
+		   	  }
+		}
     </script>
     
 
