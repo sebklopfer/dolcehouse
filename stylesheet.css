@@ -80,14 +80,14 @@ nav ul ul li:hover > a {
 }
 
 .multiple-items img{
-	width: 98%;
+	width: 100%;
 	height: auto;
 	z-index:-1;	
 }
 
 .multiple-items {
 	margin: 0 auto;
-	width: 95%;
+	width: 90%;
 }
 
 
