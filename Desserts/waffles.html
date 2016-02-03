@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Dolce House</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+
+	<script type="text/javascript" src="JQuery/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+	
+</head>
+
+<body>
+		<script type="text/javascript">
+			function logoResize() {
+				var img = document.getElementById( 'logo' );
+				var section = document.getElementsByClassName('container-section');
+				img.src = "../Photos/Dolce_House.svg";
+				if (window.innerWidth<window.innerHeight) {
+					img.style.width="60%";
+					img.style.height="auto";
+					section[0].style.width = "96%";
+					section[1].style.width = "96%";
+				} else {
+					img.style.width="20%";
+					img.style.height="auto";
+					section[0].style.width = "60%";
+					section[1].style.width = "30%";
+
+				}
+			}
+			window.onload = function() {
+				logoResize();
+			}
+			window.onresize = function() {
+				logoResize();
+			}
+		</script>
+		<center><a href="../index.html"><img id="logo"></a></center>
+	
+        <nav> 
+        	<ul>
+            	<li><a href="../gelato.html">GELATO</a></li>
+            	<li><a href="../desserts.html">DESSERTS</a>
+            		<ul>
+            			<li><a href="#">Dolshakes</a></li>
+            			<li><a href="#">Waffles</a></li>
+            			<li><a href="#">Cakes</a></li>
+            			<li><a href="#">Gelato Cakes</a></li>
+            		</ul>
+				</li> 
+            	<li><a href="../order_coming_soon.html">ORDER</a></li> 
+            	<li><a href="../contact_us.html">CONTACT US</a></li>
+        	</ul>
+        </nav>
+
+        <div id="page-container">
+        	<div class="container-section">
+        	<h2>WAFFLES</h2>
+        		<p>
+        		<br><br>
+        		<h3>Flavours</h3>
+        		Here we bring you a list of flavours that we have produced.<br>
+        		<i>*Please note that not all of these flavours will be available at one time</i>
+        		</p>
+        		<h4>Dairy-based</h4>
+        		<ul>
+        			<li>Chocolate</li>
+        			<li>Vanilla</li>
+        			<li>Hokey Pokey</li>
+        			<li>Pistachio</li>
+        			<li>Hazelnut</li>
+        			<li>Bubblegum</li>
+        			<li>Cookies and Cream</li>
+        			<li>Salted Caramel</li>
+        			<li>Burnt Caramel</li>
+        		</ul>
+        		<h4>Sorbet (Water Based)</h4>
+        		<ul>
+        			<li>Passionfruit</li>
+        			<li>Blood Orange</li>
+        			<li>Mango</li>
+        			<li>Lemon</li>
+        			<li>Strawberry</li>
+        			<li>Raspberry</li>
+        			<li>Wildberry</li>
+        			<li>Chocolate Sorbet</li>
+        			
+        		</ul>
+        	</div>
+        	<div class="container-section">
+        		<img style="width:100%; height:auto;" src="../Photos/img2.PNG">
+        		<img style="width:100%; height:auto;" src="../Photos/img5.PNG">
+        	</div>
+        	
+        	
+        	
+        </div>
+</body>
+</html>
